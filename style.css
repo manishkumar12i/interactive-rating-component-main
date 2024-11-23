@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(216, 12%, 8%);
+    font-size: 1.5vw;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 50%;
+    width: 28%;
+    margin: 10vw 35vw;
+    border-radius: 15px;
+    background-color:  hsl(213, 19%, 18%);
+}
+
+.image{
+    height: 8vh;
+    width: 5vw;
+    border-radius: 50%;
+    background-color: #19202a;
+    margin-left:2vw;
+    margin-top: 1vw;
+}
+.image img{
+    justify-content: center;
+    padding: 1vw 1.8vw;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    margin-right: 10vw;
+    margin-bottom: 20vw;
+    object-fit: contain;
+}
+
+.container h1{
+    color: white;
+    margin: 1vw 2vw;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.container p{
+    font-size: 0.8em;
+    padding: 0 2vw;
+    color:  hsl(217, 12%, 63%);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  li {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1.5vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    padding: 1vw 1vw;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #373d44;
+    color: white;
+    font-size: 1.4rem;
+    transition: background-color 0.3s;
+  }
+  
+  li:hover {
+    background-color: #959eac;
+  }
+  
+  li.selected {
+    background-color: #fb7413; /* Highlight selected rating */
+  }
+
+.btn__submit{
+    height: 3vw;
+    width: 90%;
+    border-radius: 2rem;
+    background-color: #fb7413;
+    border: none;
+    outline: none;
+    margin-left: 1vw;
+    margin-top: 2vw;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #fff;
+}
+
+
+
+.success {
+    height: 50%;
+    width: 28%;
+    margin: 6vw 35vw;
+    background-color: #19202a;
+    border-radius: 12px;
+    padding: 2vw 4vw;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .success__value {
+    color: #fb7413;
+    font-size: 2vw;
+    border-radius: 2rem;
+    background-color: #252d37;
+    font-weight: 700;
+  }
+  
+  .success h1 {
+    color: white;
+    font-size: 1em;
+  }
+  
+  .success__bottom {
+    font-size: 1.5vw;
+    color: #959eac;
+    text-align: center;
+    line-height: 1em;
+  }
+  
+
+.attribution { 
+    font-size: 1.5em;
+    color: white; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media (max-width:600px) {
+
+    .container{
+        height: 60%;
+        width: 60vw;
+        margin: 0 auto;    
+        margin-top: 10vw;
+        font-size: 4em;
+        font-weight: 400;
+    }
+    .image{
+        width: 15vw;
+    }
+    .container h1{
+        margin-top: 10vw;
+        font-size: 1em;
+    }
+    .container p{
+        font-size: 0.7em;
+        margin-top: 5vw;
+    }
+    .container ul{
+        width: 100%;
+        margin-top: 10vw;
+    }
+
+    .btn__submit{
+        height: 12vw;
+        width: 58vw;
+        border-radius: 2rem;
+        background-color: #fb7413;
+        border: none;
+        outline: none;
+        margin-left: 1vw;
+        margin-top: 10vw;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        color: #fff;
+    }
+    .success{
+        height: 50%;
+        width: 50%;
+        margin: 10vw 25vw;
+        background-color: #19202a;
+        border-radius: 12px;
+        padding: 2vw 4vw;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .success__value{
+        font-size: 2.5em;
+        padding: 0 auto;
+    }
+    .success h1{
+        font-size: 4em;
+    }
+    .success__bottom{
+        font-size: 2.2em;
+        font-weight: 500;
+    }
+    .attribution{
+        margin-top: 5vw;
+        font-size: 2em;
+    }
+}
